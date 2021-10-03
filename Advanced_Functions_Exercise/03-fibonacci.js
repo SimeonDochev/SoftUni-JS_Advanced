@@ -1,16 +1,11 @@
 function getFibonator() {
-    let firstTime = true;
     let secondLast = 0;
     let last = 1;
     return function () {
-        if (firstTime) {
-            firstTime = false;
-            return 1;
-        }
         let current = secondLast + last;
         secondLast = last;
         last = current;
-        return current;
+        return secondLast;
     }
 }
 
