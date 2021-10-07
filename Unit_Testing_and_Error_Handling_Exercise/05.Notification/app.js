@@ -1,4 +1,6 @@
 function notify(message) {
-  console.log('todo')
-  // TODO:
+  const outputField = document.getElementById('notification');
+  outputField.textContent = message;
+  outputField.style.display = 'block';
+  outputField.addEventListener('click', () => outputField.style.display = 'none');
 }
