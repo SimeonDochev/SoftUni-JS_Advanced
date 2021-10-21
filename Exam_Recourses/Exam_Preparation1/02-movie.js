@@ -1,7 +1,7 @@
 class Movie {
     constructor(movieName, ticketPrice) {
         this.movieName = movieName;
-        this.ticketPrice = ticketPrice;
+        this.ticketPrice = Number(ticketPrice);
         this.screenings = [];
         this.totalProfit = 0;
         this.totalSoldTickets = 0;
